@@ -36,4 +36,8 @@ class Main {
     }
 }
 
-Main.main();
+try {
+    Main.main();
+} catch (e) {
+    console.log(`ERROR: ${e}\n\n${e.stack}`);
+}
